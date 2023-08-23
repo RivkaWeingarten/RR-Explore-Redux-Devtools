@@ -26,8 +26,9 @@ function Counter() {
                 Decrement
             </button>
             <form onSubmit={(e) => byAmount(e)}>
-                <input type="number" onChange={(e) => setInput(e.target.value)} />
-                <button type="submit">Submit</button>
+                <label>Enter any amount to add </label>
+                <input type="number" placeholder="Enter number here" onChange={(e) => setInput(e.target.value)} />
+                <button type="submit">add number</button>
             </form>
         </div>
     )

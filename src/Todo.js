@@ -17,7 +17,8 @@ function Todo() {
     return (
         <div>
             <form onSubmit={(e) => submitForm(e)}>
-                <input type="text" onChange={(e) => setInput(e.target.value)} />
+                <label>Enter To Dos here</label>
+                <input type="text" placeholder='Enter to do here' onChange={(e) => setInput(e.target.value)} />
                 <button type="submit">Submit</button>
             </form>
             <ul>
